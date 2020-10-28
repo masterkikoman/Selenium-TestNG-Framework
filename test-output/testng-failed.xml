@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="FrameWorkSample.EndToEndTest.Listeners"/>
+  </listeners>
+  <test name="Validating Footer Links">
+    <classes>
+      <class name="FrameWorkSample.EndToEndTest.FooterLinks"/>
+    </classes>
+  </test> <!-- Validating Footer Links -->
+  <test name="Validating Home Page Ordering">
+    <classes>
+      <class name="FrameWorkSample.EndToEndTest.HomePage"/>
+    </classes>
+  </test> <!-- Validating Home Page Ordering -->
+  <test name="Validating Login Page">
+    <classes>
+      <class name="FrameWorkSample.EndToEndTest.LogIn"/>
+    </classes>
+  </test> <!-- Validating Login Page -->
+  <test name="Validating Footer Links(failed)" parallel="tests">
+    <classes>
+      <class name="FrameWorkSample.EndToEndTest.LogIn">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.LogIn -->
+      <class name="FrameWorkSample.EndToEndTest.FooterLinks">
+        <methods>
+          <include name="initialize"/>
+          <include name="footerTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.FooterLinks -->
+      <class name="FrameWorkSample.EndToEndTest.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.HomePage -->
+    </classes>
+  </test> <!-- Validating Footer Links(failed) -->
+  <test name="Validating Home Page Ordering(failed)" parallel="tests">
+    <classes>
+      <class name="FrameWorkSample.EndToEndTest.LogIn">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.LogIn -->
+      <class name="FrameWorkSample.EndToEndTest.FooterLinks">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.FooterLinks -->
+      <class name="FrameWorkSample.EndToEndTest.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+          <include name="restoPage"/>
+        </methods>
+      </class> <!-- FrameWorkSample.EndToEndTest.HomePage -->
+    </classes>
+  </test> <!-- Validating Home Page Ordering(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.404 s <<< FAILURE! - in TestSuite
+FrameWorkSample.EndToEndTest.FooterLinks.footerTest  Time elapsed: 0.216 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<13> but was:<14>
+	at FrameWorkSample.EndToEndTest.FooterLinks.footerTest(FooterLinks.java:35)
+
+FrameWorkSample.EndToEndTest.HomePage.restoPage  Time elapsed: 7.988 s  <<< FAILURE!
+java.lang.AssertionError: expected [Jollibee - Philfirst] but found [Jollibee - TEST MENU 2]
+	at FrameWorkSample.EndToEndTest.HomePage.restoPage(HomePage.java:91)
+
